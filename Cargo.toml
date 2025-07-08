@@ -9,6 +9,7 @@ homepage = "https://github.com/rtldg/signals-but-a-little-nicer"
 repository = "https://github.com/rtldg/signals-but-a-little-nicer"
 readme = "README.md"
 keywords = ["signal", "async"]
+exclude = [".github"]
 
 [dependencies]
 thiserror = "2"
