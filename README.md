@@ -1,4 +1,9 @@
 # signals-but-a-little-nicer
+[![Crates](https://img.shields.io/crates/v/signals-but-a-little-nicer.svg)](
+https://crates.io/crates/signals-but-a-little-nicer)
+[![Docs](https://docs.rs/signals-but-a-little-nicer/badge.svg)](
+https://docs.rs/signals-but-a-little-nicer)
+
 A wrapper around signal-handlers for Windows [console applications] and Unix programs.
 
 Signals in Unix are a bad API.
@@ -7,7 +12,10 @@ Which is what this does...
 
 Only a few signals are caught: SIGINT, SIGTERM, SIGHUP, SIGQUIT, SIGUSR1, and SIGUSR2.
 
-#### Example
+### Why?
+You can do everything and more with [signal-hook](https://crates.io/crates/signal-hook) or [async-signal](https://crates.io/crates/async-signal) but I explicitly want to block signals on all threads on Unix/Linux (and then use sigwait(3)).
+
+### Example
 ```rust
 fn main() {
 	let signal_recv = signals_but_a_little_nicer::get_or_init_recv().unwrap();

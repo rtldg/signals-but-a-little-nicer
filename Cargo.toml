@@ -6,6 +6,8 @@ license = "MIT"
 authors = ["rtldg <rtldg@protonmail.com>"]
 homepage = "https://github.com/rtldg/signals-but-a-little-nicer"
 repository = "https://github.com/rtldg/signals-but-a-little-nicer"
+readme = "README.md"
+keywords = ["signal", "async"]
 
 [dependencies]
 thiserror = "2"
