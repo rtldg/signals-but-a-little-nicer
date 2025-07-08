@@ -1,5 +1,6 @@
 [package]
 name = "signals-but-a-little-nicer"
+description = "A wrapper around signal-handlers for Windows [console applications] and Unix programs."
 version = "1.0.0"
 edition = "2024"
 license = "MIT"
